@@ -1,0 +1,7 @@
+cd /D d:\Java projects\PerfectAPP
+set PATH_TO_FX="D:\javafx-sdk-14.0.2.1\lib"
+set PATH_TO_FX_MODS="D:\javafx-jmods-14.0.2.1"
+dir /s /b src\*.java > sources.txt & javac --module-path %PATH_TO_FX% -d mods/PerfectAPP @sources.txt &del sources.txt
+
+для запуска 
+java --module-path "%PATH_TO_FX%;mods" -m PerfectAPP/src/sample.Main

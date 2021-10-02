@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1080.0" style="-fx-background-color: #ff7acc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ConfirmdataSDESController">
+   <children>
+      <AnchorPane layoutY="83.0" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #E6E6FA;">
+         <children>
+            <Button fx:id="confirmall" layoutX="300.0" layoutY="659.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить все" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="99.0" layoutY="15.0" prefHeight="242.0" prefWidth="214.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Label alignment="CENTER" layoutX="29.0" prefHeight="48.0" prefWidth="170.0" text="S1 таблица" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="confirmS1" contentDisplay="CENTER" layoutX="29.0" layoutY="205.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="S1text" layoutX="45.0" layoutY="48.0" prefHeight="138.0" prefWidth="138.0">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="97.0" layoutY="278.0" prefHeight="162.0" prefWidth="204.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmIP" contentDisplay="CENTER" layoutX="22.0" layoutY="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" prefHeight="48.0" prefWidth="214.0" text="IP перестановка" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IPtext" alignment="CENTER" layoutY="48.0" prefHeight="64.0" prefWidth="214.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="765.0" layoutY="11.0" prefHeight="250.0" prefWidth="218.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmS2" contentDisplay="CENTER" layoutX="30.0" layoutY="218.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="S2text" layoutX="45.0" layoutY="62.0" prefHeight="138.0" prefWidth="138.0">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="170.0" text="S2 таблица" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="confirmresult" layoutX="601.0" layoutY="659.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Получить результат" textFill="LAVENDER">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="385.0" layoutY="80.0" prefHeight="160.0" prefWidth="132.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmdata" contentDisplay="CENTER" layoutY="128.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="datatext" alignment="CENTER" layoutY="48.0" prefHeight="64.0" prefWidth="132.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="132.0" text="Данные" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="559.0" layoutY="78.0" prefHeight="160.0" prefWidth="132.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmkey" contentDisplay="CENTER" layoutY="130.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="132.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="keytext" alignment="CENTER" layoutY="49.0" prefHeight="64.0" prefWidth="132.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="132.0" text="Ключ" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="750.0" layoutY="279.0" prefHeight="160.0" prefWidth="234.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmP8" contentDisplay="CENTER" layoutX="32.0" layoutY="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="10.0" prefHeight="48.0" prefWidth="214.0" text="P8 перестановка" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="P8text" alignment="CENTER" layoutY="48.0" prefHeight="64.0" prefWidth="234.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="732.0" layoutY="456.0" prefHeight="160.0" prefWidth="271.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmP10" contentDisplay="CENTER" layoutX="50.0" layoutY="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="-1.0" prefHeight="48.0" prefWidth="271.0" text="P10 перестановка" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="P10text" alignment="CENTER" layoutY="48.0" prefHeight="64.0" prefWidth="271.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="431.0" layoutY="278.0" prefHeight="162.0" prefWidth="204.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmEP" contentDisplay="CENTER" layoutX="22.0" layoutY="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="4.0" prefHeight="48.0" prefWidth="214.0" text="EP перестановка" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="EPtext" alignment="CENTER" layoutY="48.0" prefHeight="64.0" prefWidth="214.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="89.0" layoutY="455.0" prefHeight="162.0" prefWidth="230.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmIPnv" contentDisplay="CENTER" layoutX="32.0" layoutY="132.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="234.0" text="~IP перестановка" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IPinvtext" alignment="CENTER" layoutY="48.0" prefHeight="64.0" prefWidth="234.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="431.0" layoutY="455.0" prefHeight="162.0" prefWidth="204.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Button fx:id="confirmP" contentDisplay="CENTER" layoutX="26.0" layoutY="132.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Подтвердить" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="4.0" prefHeight="48.0" prefWidth="214.0" text="P перестановка" textAlignment="CENTER" textFill="INDIGO">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Ptext" alignment="CENTER" layoutX="50.0" layoutY="49.0" prefHeight="64.0" prefWidth="122.0">
+                     <font>
+                        <Font name="Times New Roman" size="30.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="confirmback" alignment="CENTER" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="132.0" style="-fx-background-color: #5757ff; -fx-border-radius: 10;" text="Назад" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" layoutY="14.0" prefHeight="60.0" prefWidth="799.0" text="Программа по шифрованию: S-DES" textFill="LAVENDER">
+         <font>
+            <Font name="Times New Roman" size="49.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

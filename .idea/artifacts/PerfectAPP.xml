@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="PerfectAPP">
+    <output-path>$PROJECT_DIR$/out/artifacts/PerfectAPP</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="PerfectAPP.jar">
+        <element id="module-output" name="PerfectAPP" />
+        <element id="library" level="project" name="javafx-jmods" />
+        <element id="library" level="project" name="javafx" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx-swt.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx.base.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx.fxml.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx.controls.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx.graphics.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx.media.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx.swing.jar" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/src.zip" path-in-jar="/" />
+        <element id="extracted-dir" path="D:/javafx-sdk-14.0.2.1/lib/javafx.web.jar" path-in-jar="/" />
+      </element>
+    </root>
+  </artifact>
+</component>
