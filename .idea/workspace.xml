@@ -6,8 +6,29 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PerfectAPP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PerfectAPP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/FakeMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/FakeMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/META-INF/PerfectAPP.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/AES/ALG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/AES/ALG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/AES/RoundClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/AES/RoundClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/AES/SAES.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/AES/SAES.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ConfirmdataSAESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ConfirmdataSAESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ConfirmdataSDESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ConfirmdataSDESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ResultSAESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ResultSAESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ResultSDESController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/ResultSDESController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/startWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Controllers/startWindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/DES/AlCorithme.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/DES/AlCorithme.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/DES/Feistel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/DES/Feistel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/DES/SDES.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/DES/SDES.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/FXMLS/startwindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/FXMLS/startwindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PerfectAPP/sample/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,10 +91,18 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1gBdxnH9Gr186OBK8p8qlEHDCeC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -83,13 +112,13 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LabaratoryworKMIP" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20551091" />
-    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -106,19 +135,13 @@
       <recent name="D:\Java projects\PerfectAPP" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -131,18 +154,12 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="14.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH" value="D:\JDK\JDK 17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="FakeMain" />
       <module name="PerfectAPP" />
-      <option name="VM_PARAMETERS" value="--module-path D:/javafx-sdk-14.0.2.1/lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.Controllers.*" />
@@ -193,6 +210,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -204,11 +222,34 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1637074425344" duration="243000" />
+      <workItem from="1637074683693" duration="7000" />
+      <workItem from="1637074734805" duration="45000" />
+      <workItem from="1637074798373" duration="759000" />
+      <workItem from="1637076992214" duration="51000" />
+      <workItem from="1637077066069" duration="156000" />
+      <workItem from="1637077234231" duration="1182000" />
+      <workItem from="1637080410262" duration="195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
