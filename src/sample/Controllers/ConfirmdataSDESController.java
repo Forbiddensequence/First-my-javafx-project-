@@ -10,6 +10,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import sample.AES.RoundClass;
 import sample.DES.SDES;
+import sample.Main;
+import sample.Verifier;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -99,12 +101,9 @@ public class ConfirmdataSDESController {
 
     @FXML
     void initialize() {
-
-
+        Main.CurrentButtonScene=getButt();
         initfunc();
         displayAll();
-
-        
         confirmdata.setOnAction(event-> {
             System.out.println("Фега работает кнопка подтверждения ввода исходных данных ");
             SDES.Data=DataTrasfer(datatext, SDES.Data,isDataready);
@@ -167,21 +166,38 @@ public class ConfirmdataSDESController {
         });
 
         confirmresult.setOnAction(event->{
+            if(Verifier.isButtonHopeActive) {
+                if (isPready&&isIPready&&isS1ready&&isS2ready&&isDataready&&isKeyready&&isP8ready&&isP10ready&&isEPready) {
 
-            if (isPready&&isIPready&&isS1ready&&isS2ready&&isDataready&&isKeyready&&isP8ready&&isP10ready&&isEPready) {
-                confirmresult.getScene().getWindow().hide();
-                FXMLLoader loader=new FXMLLoader();
-                loader.setLocation(getClass().getResource("/sample/FXMLS/resultSDES.fxml"));
-                try{
-                    loader.load();
+                    confirmresult.getScene().getWindow().hide();
+                    FXMLLoader loader = new FXMLLoader();
+                    loader.setLocation(getClass().getResource("/sample/FXMLS/resultSDES.fxml"));
+                    try {
+                        loader.load();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    Parent root = loader.getRoot();
+                    Stage stage = new Stage();
+                    stage.setTitle("Я открылся!!!");
+                    stage.setScene(new Scene(root, 926, 659));
+                    stage.setResizable(false);
+                    stage.show();
                 }
-                catch(IOException e){
+            }
+            else {
+                confirmback.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
+                try {
+                    loader.load();
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
-                Parent root=loader.getRoot();
-                Stage stage=new Stage();
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
                 stage.setTitle("Я открылся!!!");
-                stage.setScene(new Scene(root,926,659));
+                stage.setScene(new Scene(root, 926, 659));
                 stage.setResizable(false);
                 stage.show();
             }
@@ -212,21 +228,38 @@ public class ConfirmdataSDESController {
         });
 
         confirmback.setOnAction(event->{
-            confirmback.getScene().getWindow().hide();
-            FXMLLoader loader=new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
-            try{
-                loader.load();
+            if(Verifier.isButtonHopeActive) {
+                confirmback.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setTitle("Я открылся!!!");
+                stage.setScene(new Scene(root, 926, 659));
+                stage.setResizable(false);
+                stage.show();
             }
-            catch(IOException e){
-                e.printStackTrace();
+            else {
+                confirmback.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setTitle("Я открылся!!!");
+                stage.setScene(new Scene(root, 926, 659));
+                stage.setResizable(false);
+                stage.show();
             }
-            Parent root=loader.getRoot();
-            Stage stage=new Stage();
-            stage.setTitle("Я открылся!!!");
-            stage.setScene(new Scene(root,926,659));
-            stage.setResizable(false);
-            stage.show();
         });
 
 
@@ -293,7 +326,6 @@ public class ConfirmdataSDESController {
         displayData(SDES.P10,P10text);
         displayData(SDES.EandP,EPtext);
         displayData(SDES.P,Ptext);
-
     }
 
     public void initfunc(){
@@ -372,4 +404,7 @@ public class ConfirmdataSDESController {
     }
 
 
+    public Button getButt(){
+        return confirmback;
+    }
 }

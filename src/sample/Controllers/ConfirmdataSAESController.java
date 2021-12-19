@@ -9,6 +9,8 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import sample.AES.RoundClass;
 import sample.AES.SAES;
+import sample.Main;
+import sample.Verifier;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -72,7 +74,7 @@ public class ConfirmdataSAESController {
     @FXML
     void initialize() {
 
-
+        Main.CurrentButtonScene=getButt();
         initfunc();
         displayAll();
 
@@ -115,21 +117,37 @@ public class ConfirmdataSAESController {
         });
 
         confirmresult.setOnAction(event->{
-
-            if (isConstantready&&isSNready&&isDataready&&isKeyready) {
-                confirmresult.getScene().getWindow().hide();
-                FXMLLoader loader=new FXMLLoader();
-                loader.setLocation(getClass().getResource("/sample/FXMLS/resultSAES.fxml"));
-                try{
-                    loader.load();
+            if(Verifier.isButtonHopeActive) {
+                if (isConstantready && isSNready && isDataready && isKeyready) {
+                    confirmresult.getScene().getWindow().hide();
+                    FXMLLoader loader = new FXMLLoader();
+                    loader.setLocation(getClass().getResource("/sample/FXMLS/resultSAES.fxml"));
+                    try {
+                        loader.load();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    Parent root = loader.getRoot();
+                    Stage stage = new Stage();
+                    stage.setTitle("Я открылся!!!");
+                    stage.setScene(new Scene(root, 926, 659));
+                    stage.setResizable(false);
+                    stage.show();
                 }
-                catch(IOException e){
+            }
+            else {
+                confirmback.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
+                try {
+                    loader.load();
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
-                Parent root=loader.getRoot();
-                Stage stage=new Stage();
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
                 stage.setTitle("Я открылся!!!");
-                stage.setScene(new Scene(root,926,659));
+                stage.setScene(new Scene(root, 926, 659));
                 stage.setResizable(false);
                 stage.show();
             }
@@ -145,21 +163,38 @@ public class ConfirmdataSAESController {
         });
 
         confirmback.setOnAction(event->{
-            confirmback.getScene().getWindow().hide();
-            FXMLLoader loader=new FXMLLoader();
-            loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
-            try{
-                loader.load();
+            if(Verifier.isButtonHopeActive) {
+                confirmback.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setTitle("Я открылся!!!");
+                stage.setScene(new Scene(root, 926, 659));
+                stage.setResizable(false);
+                stage.show();
             }
-            catch(IOException e){
-                e.printStackTrace();
+            else {
+                confirmback.getScene().getWindow().hide();
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/sample/FXMLS/startwindow.fxml"));
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setTitle("Я открылся!!!");
+                stage.setScene(new Scene(root, 926, 659));
+                stage.setResizable(false);
+                stage.show();
             }
-            Parent root=loader.getRoot();
-            Stage stage=new Stage();
-            stage.setTitle("Я открылся!!!");
-            stage.setScene(new Scene(root,926,659));
-            stage.setResizable(false);
-            stage.show();
         });
 
     }
@@ -296,5 +331,9 @@ public class ConfirmdataSAESController {
             prepdata=prepdata.substring(1,prepdata.length());
         }
         return prepdata;
+    }
+
+    public Button getButt(){
+        return confirmback;
     }
 }
